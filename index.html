@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- Bootstrap CSS 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div id="tag"></div>
+        </div>
+    </header>
+
+    <!-- Important jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.ready(function () {
+
+            var question = {
+                "q1": ["test", "test"],
+                "q2": ["", ""],
+                "q3": ["", ""],
+                "q4": ["", ""],
+                "q5": ["", ""],
+                "q6": ["", ""],
+                "q7": ["", ""],
+                "q8": ["", ""],
+                "q9": ["", ""],
+                "q10": ["", ""],
+            }
+
+        for (var q = 0; q < question.length; p++) {
+            var questions = [question.q1[0], question.q2[0], questions.q3];
+
+        for (var i = 0; i < questions.length; i++) {
+                $("#tag").html(questions[i]);
+                
+            }
+        }
+
+        });
+    </script>
+        
+</body>
+
+</html>
